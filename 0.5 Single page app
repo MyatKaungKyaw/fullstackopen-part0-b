@@ -1,0 +1,19 @@
+browser->server: HTTP GET Request URL: https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser run code in js file
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{content: "websequence diagram", date: "2022-05-29T18:49:36.379Z"},…]
+
+note over browser:
+browser run code in js file that
+render notes to html
+end note
