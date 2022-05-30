@@ -10,14 +10,14 @@ browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
 server-->browser: main.js
 
 note over browser:
-browser run js file
+browser run code in js file
 that requests JSON data from server 
 end note
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
-server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+server-->browser: [{content: "websequence diagram", date: "2022-05-29T18:49:36.379Z"},…]
 
 note over browser:
-browser executes the callback function of onreadystatechange event
-that renders notes to display
+browser run code in js file that
+render notes to html
 end note
