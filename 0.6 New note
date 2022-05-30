@@ -1,0 +1,7 @@
+note over browser:
+add new note to notes variable.
+browser run code in js file that
+render notes to html.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: Status Code : 201
